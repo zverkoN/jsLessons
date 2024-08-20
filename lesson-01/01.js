@@ -3,10 +3,12 @@
 
 // your code
 let sum = 0
-let iteration = 0
+let iteration = 1
 
- while (iteration < 20 ) {
-    sum = sum + (sum + 1)
+ while (iteration <= 20 ) {
+   
+    sum = sum +  iteration
+
     iteration = iteration + 1
 }
 
