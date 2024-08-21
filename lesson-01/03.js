@@ -5,4 +5,18 @@
 */
 
 // your code
-let sum
+let sum = 0
+let iteration = 1
+while ( iteration < 20) {
+
+
+  if (iteration%2) {
+ 
+
+    sum = sum + iteration 
+  }
+
+iteration = iteration + 1
+
+  
+}
