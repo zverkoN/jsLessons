@@ -6,12 +6,16 @@
 
 * Для успешного прохождения тестов не меняйте названия переменных!
 */
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
 
-let dice1 // your code
-let dice2 // your code
-let isWinningDouble // your code
+console.log(getRandomArbitrary(1, 7));
 
-/*
+let dice1 = getRandomArbitrary(1, 7)// your code 
+let dice2 = getRandomArbitrary(1, 7)// your code 
+let isWinningDouble = (dice1 === dice2) && (dice1 >3) // your code 
+
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
@@ -19,4 +23,4 @@ if (isWinningDouble) {
 } else {
   console.log('Не выигрышный дубль.')
 }
-*/
+
