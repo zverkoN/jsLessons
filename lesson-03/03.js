@@ -1,15 +1,15 @@
 // Разработайте функцию findLargest, которая принимает три числа и возвращает наибольшее из них.
 
 function findLargest(a, b, c) {
-    if ((a > b) && (a > c)) {
+    if ((a >= b) && (a >= c)) {
         return a
     
-    } else if  ((b > a) && (b > c)) {
+    } else if  ((b >= a) && (b >= c)) {
         return b 
         
-    } else if  ((c > a) && (c > b)) {
+    } else if  ((c >= a) && (c >= b)) {
         return c 
     }
 }
     
-    console.log(findLargest(2, 3, 4))
+    console.log(findLargest(22, 22, 23))

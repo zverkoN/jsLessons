@@ -4,7 +4,7 @@
 function isEven(a) {
     if (a%2 === 0) {
         return true
-    } else if (a%2 === 1) {
+    } else if (Math.abs(a%2) === 1) {
         return false
     }
 }
