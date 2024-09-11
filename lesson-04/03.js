@@ -29,10 +29,9 @@ const newArray = []
         }
     }
 
-
-
-return newArray.length ? newArray : undefined
+return newArray
 
 }
+
 
 
