@@ -31,7 +31,8 @@ const newArray = []
 
 
 
-return newArray
+return newArray.length ? newArray : undefined
 
 }
-console.log(findCommonElements([1, 2, 3], [2, 3, 4]), '[2, 3]')
+
+
