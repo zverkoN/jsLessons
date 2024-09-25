@@ -17,18 +17,53 @@
 
 
 function findUniqueElements(array) {
+const newArray =[]
 
-    const newArray = []
-for(let i=0; i<array.length; i++){
-   
-    const isElementInArray = includesElement(newArray, array[i])
-   
-    if(!isElementInArray){
-newArray.push(array[i])
+for(let i=0; i < array.length; i++){
 
-    }
+  if (!includesElement(newArray, array[i])) {
+    newArray.push(array[i])
+  } 
+    includesElement(newArray, array[i]) // нам нужно обратное от значения которое вернет функию
+
 
 }
+
+
+
+
 return newArray
+
 }
 console.log(findUniqueElements([1, 2, 3, 2, 1, 4]), "[1, 2, 3, 4]")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     const newArray = []
+// for(let i=0; i<array.length; i++){
+   
+//     const isElementInArray = includesElement(newArray, array[i])
+   
+//     if(!isElementInArray){
+// newArray.push(array[i])
+
+//     }
+
+// }
+// return newArray

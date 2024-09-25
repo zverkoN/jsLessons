@@ -28,3 +28,26 @@ if (array[i] === element) {
 }
 
 console.log("1111",includesElement([1, 8, 2], 2));
+
+
+
+
+
+function arrayPlusArray(arr1, arr2) {
+  let sumArr = []  
+  let sumNambers1 = 0
+  let sumNambers2 = 0
+  
+for(let i=0; i < arr1.length; i++){
+  sumNambers1 = arr1[i] + sumNambers1
+  return sumNambers1
+}
+  for(let i=0; i < arr2.length; i++){
+  sumNambers2 = arr2[i] + sumNambers2
+  return sumNambers2
+}
+  sumArr = sumNambers1 + sumNambers2
+   return sumArr; 
+} 
+ 
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))

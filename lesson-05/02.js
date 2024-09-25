@@ -10,7 +10,7 @@
 Пример использования функции:
 
 const gallery = {
-  'Mona Lisa': 'Leonardo da Vinci',
+  'Mona Lisa': '111111111111',
   'Starry Night': 'Vincent van Gogh',
   'The Scream': 'Edvard Munch'
 }
@@ -35,4 +35,8 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(object, propertyName, value) {
+
+  object[propertyName] = value
+
+}
