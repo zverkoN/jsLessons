@@ -6,4 +6,29 @@
   Другой вариант - использовать метод split строк, и метод массива join.
 */
 
-function capitalizeWords() {}
+function capitalizeWords(array) {
+  
+  let newStr = ''
+
+  for (let i = 0; i < array.length; i++) {
+  if(i===0){
+
+newStr = `${array[i].toUpperCase()}`
+  }
+  
+  if(array[i]===' '){
+
+newStr = `${newStr}${array[i]}${array[i+1].toUpperCase()}`
+  }
+
+  if(i!==0&&array[i]!==' '&&array[i-1]!==' '){
+newStr = `${newStr}${array[i]}`
+
+  }
+  }
+
+return newStr
+}
+
+
+
