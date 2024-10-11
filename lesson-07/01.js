@@ -8,27 +8,48 @@
 
 function capitalizeWords(array) {
   
-  let newStr = ''
+let newStr = ''
 
-  for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < array.length; i++) {
   if(i===0){
-
 newStr = `${array[i].toUpperCase()}`
   }
   
-  if(array[i]===' '){
+  if (array[i]===' ') {
+    newStr = `${newStr}${array[i]}${array[i+1].toUpperCase()}`
+  } 
 
-newStr = `${newStr}${array[i]}${array[i+1].toUpperCase()}`
+  if (i!==0&&array[i]!==' '&&array[i-1]!==' '){
+    newStr = `${newStr}${array[i]}`
   }
-
-  if(i!==0&&array[i]!==' '&&array[i-1]!==' '){
-newStr = `${newStr}${array[i]}`
-
-  }
-  }
-
-return newStr
 }
+  return newStr
+}
+console.log(333333,capitalizeWords('hello world from javascript'));
 
 
 
+
+
+
+
+// let newStr = ''
+
+//   for (let i = 0; i < array.length; i++) {
+//   if(i===0){
+
+// newStr = `${array[i].toUpperCase()}`
+//   }
+  
+//   if(array[i]===' '){
+
+// newStr = `${newStr}${array[i]}${array[i+1].toUpperCase()}`
+//   }
+
+//   if(i!==0&&array[i]!==' '&&array[i-1]!==' '){
+// newStr = `${newStr}${array[i]}`
+
+//   }
+//   }
+
+// return newStr
