@@ -31,7 +31,7 @@ const map = (array, callback) => {
   const newMap = []
   for(let i = 0; i < array.length; i++){ 
     const cb = callback(array[i], i)
-    newMap.push(result);
+    newMap.push(cb);
 
   }
 return newMap
