@@ -32,25 +32,11 @@ const filter = (array, callback) => {
       newFilter.push(array[i])
     }
   }
-
+return newFilter
 
 }
 
 
-// const numbers = [1, 2, 3, 4, 5]
-
-// const oddNumbers = filter(numbers, (element, index) => {
-//   return element % 2 !== 0
-// });
-
-// const odd = numbers.filter((element, index) => {
-//   return element % 2 !== 0
-// })
-
-// console.log('task 88888888')
-// console.log(oddNumbers)
-// console.log('------------')
-// console.log(odd)
 
 
 
