@@ -22,7 +22,18 @@
 */
 
 const model = {
-  movies: [],
+  movies: [
+    {
+    id: 1, 
+    title: "lord of the rings", 
+    description: "lmvkmnfjlknmvjr"
+  },
+  {
+    id: 2, 
+    title: "lord of the rings2", 
+    description: "lmvkmnfjlknmvygjygjr"
+  }
+],
   addMovie(title, description) {
     const id = Math.random()
     const newMovie = { id, title, description }
@@ -30,6 +41,12 @@ const model = {
     view.renderMovies(this.movies)
   },
   // your code
+  
+  deleteMovie(id){
+this.movies=this.movies.filter((movie)=> movie.id !== id )
+view.renderMovies(this.movies)
+  }
+
 }
 
 const view = {
@@ -39,6 +56,7 @@ const view = {
     const form = document.querySelector('.form')
     const inputTitle = document.querySelector('.input-title')
     const inputDescription = document.querySelector('.input-description')
+    const list = document.querySelector('.list')
 
     form.addEventListener('submit', function (event) {
       event.preventDefault()
@@ -51,6 +69,15 @@ const view = {
     })
 
     // your code
+
+  list.addEventListener('click', function(e){
+  e.preventDefault()
+  const id = e.target.parentElement.id;
+
+  controller.deleteMovie(id)
+  })
+
+
   },
   renderMovies(movies) {
     const list = document.querySelector('.list')
@@ -91,6 +118,11 @@ const controller = {
     }
   },
   // your code
+deleteMovie(id){
+  model.deleteMovie(id)
+  view.displayMessage('Фильм успешно удалён!')
+}
+
 }
 
 function init() {
@@ -98,3 +130,4 @@ function init() {
 }
 
 document.addEventListener('DOMContentLoaded', init)
+

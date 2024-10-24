@@ -30,8 +30,7 @@ const map = (array, callback) => {
 
   const newMap = []
   for(let i = 0; i < array.length; i++){ 
-    const cb = callback(array[i], i)
-    newMap.push(cb);
+    newMap.push(callback(array[i], i));
 
   }
 return newMap
