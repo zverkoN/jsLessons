@@ -32,7 +32,8 @@ const model = {
   // your code
   
   deleteMovie(id){
-this.movies=this.movies.filter((movie)=> movie.id !== id )
+    
+this.movies=this.movies.filter((movie)=> movie.id !== Number(id) )
 view.renderMovies(this.movies)
   }
 
