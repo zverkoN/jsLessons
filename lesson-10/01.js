@@ -22,18 +22,7 @@
 */
 
 const model = {
-  movies: [
-    {
-    id: 1, 
-    title: "lord of the rings", 
-    description: "lmvkmnfjlknmvjr"
-  },
-  {
-    id: 2, 
-    title: "lord of the rings2", 
-    description: "lmvkmnfjlknmvygjygjr"
-  }
-],
+  movies: [],
   addMovie(title, description) {
     const id = Math.random()
     const newMovie = { id, title, description }
